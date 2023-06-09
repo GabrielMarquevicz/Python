@@ -1,0 +1,22 @@
+O código no qual postei é sobre a sequencia de fibonacci, na qual achei que fosse mais interessante.
+O código é bem simples como se trata da sequencia de fibonacci é necessario que o número anterior some com o atual pra dar o próximo número;
+Começamos usando o "def";
+Na qual funciona para criar uma função e logo depois o nome da função;
+Depois é feita a colocação das variáveis, na qual se tem a = 0 e b = 1;
+Eles tem tais números pois eles vao começar em 1 e ir somando o anterior mais o atual;
+Usando-se while a gente coloca eles num loop para enquanto o a<n ele continue printando o valor de a;
+A variável n é o valor que o usuário vai pedir no começo do programa dai caso a pessoa coloque 10 ele vai fazer a sequência de fibonacci até o número mais próximo de 10;
+Usando: print(a, end= ' '), faz com que a variável "a" se repita toda vez no final do programa;
+Graças ao comando end que traz a função de printar tal resultado no final da operação;
+Chegando finalmente onde se acontece a sequência;
+a, b = b, a + b;
+Esse comando faz com que a variável "a" sempre some com a variável "b";
+De modo que toda vez que ela some com "b" ela adquire o valor final;
+Printando em todo final de operação até chegar ao número desejado;
+fib(int(input("Digite o  número pra fazer fibonacci: "))), seria o final da operação;
+Porém graças ao fib, int, input ela é o começo fazendo com que faça que o usuário coloque o número desejado;
+fib seria o nome da função;
+Int o valor que vai dar sempre sendo inteiro;
+Além do input informando que o programa deseja receber a informação pedida, no qual seria como o printf e scanf do C;
+Juntado todo esses códigos a gente chega na sequência de fibonacci.
+
