@@ -15,7 +15,7 @@ De modo que toda vez que ela some com "b" ela adquire o valor final;
 Printando em todo final de operação até chegar ao número desejado;
 fib(int(input("Digite o  número pra fazer fibonacci: "))), seria o final da operação;
 Porém graças ao fib, int, input ela é o começo fazendo com que faça que o usuário coloque o número desejado;
-fib seria o nome da função;
+fib seria o nome da função levando ao começo e interligando o resultado de Digite o número pra fazer fibonacci seja da variável "n";
 Int o valor que vai dar sempre sendo inteiro;
 Além do input informando que o programa deseja receber a informação pedida, no qual seria como o printf e scanf do C;
 Juntado todo esses códigos a gente chega na sequência de fibonacci.
