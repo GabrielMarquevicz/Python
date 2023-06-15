@@ -1,22 +1,30 @@
-O código no qual postei é sobre a sequencia de fibonacci, na qual achei que fosse mais interessante.
-O código é bem simples como se trata da sequencia de fibonacci é necessario que o número anterior some com o atual pra dar o próximo número;
-Começamos usando o "def";
-Na qual funciona para criar uma função e logo depois o nome da função;
-Depois é feita a colocação das variáveis, na qual se tem a = 0 e b = 1;
-Eles tem tais números pois eles vao começar em 1 e ir somando o anterior mais o atual;
-Usando-se while a gente coloca eles num loop para enquanto o a<n ele continue printando o valor de a;
-A variável n é o valor que o usuário vai pedir no começo do programa dai caso a pessoa coloque 10 ele vai fazer a sequência de fibonacci até o número mais próximo de 10;
-Usando: print(a, end= ' '), faz com que a variável "a" se repita toda vez no final do programa;
-Graças ao comando end que traz a função de printar tal resultado no final da operação;
-Chegando finalmente onde se acontece a sequência;
-a, b = b, a + b;
-Esse comando faz com que a variável "a" sempre some com a variável "b";
-De modo que toda vez que ela some com "b" ela adquire o valor final;
-Printando em todo final de operação até chegar ao número desejado;
-fib(int(input("Digite o  número pra fazer fibonacci: "))), seria o final da operação;
-Porém graças ao fib, int, input ela é o começo fazendo com que faça que o usuário coloque o número desejado;
-fib seria o nome da função levando ao começo e interligando o resultado de Digite o número pra fazer fibonacci seja da variável "n";
-Int o valor que vai dar sempre sendo inteiro;
-Além do input informando que o programa deseja receber a informação pedida, no qual seria como o printf e scanf do C;
-Juntado todo esses códigos a gente chega na sequência de fibonacci.
+O código o qual está escrito é de morfologia;
+Começamos usando o "import cv2" no qual server para processar uma imagem ou video em tempo real;
+Depois utilizamos o código "import numpy as np" para iniciar o código importado;
+Utilizando "img = cv2.imread('j.png',0)" conseguimos chamar a variável imagem como a png que importamos;
+Colocando logo em seguida "img_opening = cv2.imread('j_ruido.png',0)" colocamos outra imagem mas dessa vez que tenha alguns pontos;
+Por último a última foto no qual irá ser utilizada "img_closing = cv2.imread('j_furos.png',0)";
+Usando "altura, largura = img.shape" conseguimos fazer com que o "shape" da imagem seja igual de altura e largura;
+Utilizando "kernel = np.ones((5,5),np.uint8) define kernel;
+Depois apenas usando "print(kernel)" ele faz com que imprima kernel na tela;
+A erosão é utilizada para encolher ou afinar a imagem no qual você colocou a variável "erosion = cv2.erode(img,kernel,iterations = 2)";
+Logo depois usando "dilation = cv2.dilate(img,kernel,iterations = 2)" faz com que aumente ou engrosse a imagem;
+Usando depois o morph gradient no qual é a diferença entre a erosão e dilatação, irá retornar um contorno do objeto da imagem"gradient = cv2.morphologyEx(img, cv2.MORPH_GRADIENT, kernel)";
+Utilizando tal comando faz com que traga a imagem no qual vai ser "modificada" "opening = cv2.morphologyEx(img_opening, cv2.MORPH_OPEN, kernel)";
+Assim utilizando esse código para fechar a imagem "closing = cv2.morphologyEx(img_closing, cv2.MORPH_CLOSE, kernel)";
+Juntando todo esses códigos teremos a aplicação da morfologia;
+No qual seria a transformação gradativa de um ser ou objeto para outro baseado em pontos;
+Além disso caso a pessoa não tenha o python instalado pode-se usar outro código no qual faz o mesmo "serviço" por assim dizer
+cv2.imshow('in', img);
+cv2.imshow('erosion_out', erosion);
+cv2.imshow('dilation_out', dilation);
+cv2.imshow('opening_out', opening);
+cv2.imshow('closing_out', closing);
+cv2.imshow('gradient_out', gradient);
+cv2.waitKey(0);
+cv2.destroyAllWindows();
+Porém esse código vai realizar as imagens em telas separadas.
+
+
+
 
